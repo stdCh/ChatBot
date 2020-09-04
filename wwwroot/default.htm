@@ -433,6 +433,9 @@
             document.getElementById("divWebChat").style.display = "inline-block";
             
         }
+        function closeChatWindow() {
+            document.getElementById("divWebChat").style.display = "none";
+        }
     </script>
 </head>
 
@@ -468,6 +471,7 @@
         </div>
         <div class="column how-to-iframe" id="how-to-iframe">
             <div id="divWebChat" style="display:none;" class="chatWindow">
+                <div id="titleBar" style="background-color:blue; cursor:pointer;height:24px;color:white;font-weight:bold;" onclick="closeChatWindow();">ConnX Chat</div>
                 <iframe src='https://webchat.botframework.com/embed/connxTest?s=tCaZDI2NrCU.0vOl1V5KnbJkj_bbII81dTva87K6z-41Ws_mjO1a5PY' style='width: 400px; height: 500px;'></iframe>
             </div>
         </div>
